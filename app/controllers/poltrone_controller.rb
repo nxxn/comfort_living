@@ -1,0 +1,3 @@
+class PoltroneController < ApplicationController
+
+end

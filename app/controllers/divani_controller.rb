@@ -1,0 +1,3 @@
+class DivaniController < ApplicationController
+
+end

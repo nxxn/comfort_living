@@ -1,0 +1,3 @@
+class MaterassiController < ApplicationController
+
+end
