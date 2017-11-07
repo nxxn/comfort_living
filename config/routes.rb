@@ -21,4 +21,19 @@ Rails.application.routes.draw do
   get 'divani/design/mambo', to: 'divani#design_mambo', as: 'design_mambo'
   get 'divani/design/samanta_lineare', to: 'divani#design_samanta_lineare', as: 'design_samanta_lineare'
   get 'divani/design/samanta_angolare', to: 'divani#design_samanta_angolare', as: 'design_samanta_angolare'
+
+  #Divani Relax
+  get 'divani/relax/murano_penisola', to: 'divani#relax_murano_penisola', as: 'relax_murano_penisola'
+  get 'divani/relax/comfort_angolare', to: 'divani#relax_comfort_angolare', as: 'relax_comfort_angolare'
+  get 'divani/relax/serena_angolare', to: 'divani#relax_serena_angolare', as: 'relax_serena_angolare'
+  get 'divani/relax/murano', to: 'divani#relax_murano', as: 'relax_murano'
+  get 'divani/relax/serena', to: 'divani#relax_serena', as: 'relax_serena'
+  get 'divani/relax/panama', to: 'divani#relax_panama', as: 'relax_panama'
+  get 'divani/relax/linda', to: 'divani#relax_linda', as: 'relax_linda'
+  get 'divani/relax/comfort', to: 'divani#relax_comfort', as: 'relax_comfort'
+
+  #Divani Letto
+  get 'divani/letto/twin', to: 'divani#letto_twin', as: 'letto_twin'
+  get 'divani/letto/comodo', to: 'divani#letto_comodo', as: 'letto_comodo'
+  get 'divani/letto/venezia', to: 'divani#letto_venezia', as: 'letto_venezia'
 end
