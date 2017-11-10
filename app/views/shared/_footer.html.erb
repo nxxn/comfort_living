@@ -1,4 +1,4 @@
-<section class="padding_top_50px padding_bottom_50px">
+<section id="dove_siamo" class="padding_top_70px padding_bottom_70px top_block_border <%= (params[:controller] == 'main' && params[:action] == 'index') || (params[:controller] == 'main' && params[:action] == 'chi_siamo') ? '' : 'grey_bg' %>">
   <div class="container">
     <div class="col-sm-12 text-center section_heading">
       Dove Siamo
@@ -40,7 +40,20 @@
                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
               </span>
               <span class="inline_block contacts_text">
-                example@example.it
+                <a href="mailto:info@comfortableliving.it" class="footer_email_link">info@comfortableliving.it</a>
+              </span>
+            </span>
+          </li>
+
+          <li>
+            <span class="flex">
+              <span class="inline_block contacts_icon">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </span>
+              <span class="inline_block contacts_text">
+                <a href="https://www.facebook.com/comfortablelivingerba/" class="footer_email_link">
+                  @comfortablelivingerba
+                </a>
               </span>
             </span>
           </li>

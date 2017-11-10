@@ -1,19 +1,156 @@
-<section>
-  <div class="col-sm-12 no_side_padding">
-    <div class="home_slider_item">
-      <span class="inline_block">
-        <span class="block slider_big_text">
-          Divani Design
-        </span>
+<section class="grey_bg padding_top_30px padding_bottom_30px">
+  <div id="carousel" class="carousel slide home_carousel" data-ride="carousel" data-interval="false">
 
-        <span class="block slider_medium_text">
-          Produzione Propria
-        </span>
+    <ol class="carousel-indicators hide_on_mobile">
+      <li data-target="#carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel" data-slide-to="1"></li>
+      <li data-target="#carousel" data-slide-to="2"></li>
+      <li data-target="#carousel" data-slide-to="3"></li>
+      <li data-target="#carousel" data-slide-to="4"></li>
+      <li data-target="#carousel" data-slide-to="5"></li>
+      <li data-target="#carousel" data-slide-to="6"></li>
+    </ol>
 
-        <span class="block">
-          <%= link_to "Sfoglia", "#", class: "sfoglia_btn" %>
-        </span>
-      </span>
+    <div class="carousel-inner">
+      <div class="col-sm-12 no_side_padding item active">
+        <div class="home_slider_item_first">
+          <span class="inline_block">
+            <span class="block slider_big_text">
+              Divani Design
+            </span>
+
+            <span class="block slider_medium_text">
+              Produzione Propria
+            </span>
+
+            <span class="block">
+              <%= link_to "Sfoglia", divani_path(:anchor => "divani_design"), class: "sfoglia_btn" %>
+            </span>
+          </span>
+        </div>
+      </div>
+
+      <div class="col-sm-12 no_side_padding item">
+        <div class="home_slider_item_second">
+          <span class="inline_block">
+            <span class="block slider_big_text">
+              Divani Design
+            </span>
+
+            <span class="block slider_medium_text">
+              Produzione Propria
+            </span>
+
+            <span class="block">
+              <%= link_to "Sfoglia", divani_path(:anchor => "divani_design"), class: "sfoglia_btn" %>
+            </span>
+          </span>
+        </div>
+      </div>
+
+      <div class="col-sm-12 no_side_padding item">
+        <div class="home_slider_item_fourth">
+          <span class="inline_block">
+            <span class="block slider_big_text">
+              Divani <br> Personalizzati
+            </span>
+
+            <span class="block slider_medium_text">
+              Su Misura
+            </span>
+
+            <span class="block">
+              <%= link_to "Sfoglia", divani_path, class: "sfoglia_btn" %>
+            </span>
+          </span>
+        </div>
+      </div>
+
+      <div class="col-sm-12 no_side_padding item">
+        <div class="home_slider_item_fifth">
+          <span class="inline_block">
+            <span class="block slider_big_text">
+              Divani Relax
+            </span>
+
+            <span class="block slider_medium_text">
+              Produzione Propria
+            </span>
+
+            <span class="block">
+              <%= link_to "Sfoglia",  divani_path(:anchor => "divani_relax"), class: "sfoglia_btn" %>
+            </span>
+          </span>
+        </div>
+      </div>
+
+      <div class="col-sm-12 no_side_padding item">
+        <div class="home_slider_item_third">
+          <span class="inline_block">
+            <span class="block slider_big_text">
+              Divani Letto
+            </span>
+
+            <span class="block slider_medium_text">
+              Produzione Propria
+            </span>
+
+            <span class="block">
+              <%= link_to "Sfoglia", divani_path(:anchor => "divani_letto"), class: "sfoglia_btn" %>
+            </span>
+          </span>
+        </div>
+      </div>
+
+      <div class="col-sm-12 no_side_padding item">
+        <div class="home_slider_item_six">
+          <span class="inline_block">
+            <span class="block slider_big_text">
+              Divani Relax
+            </span>
+
+            <span class="block slider_medium_text">
+              Produzione Propria
+            </span>
+
+            <span class="block">
+              <%= link_to "Sfoglia",  divani_path(:anchor => "divani_relax"), class: "sfoglia_btn" %>
+            </span>
+          </span>
+        </div>
+      </div>
+
+      <div class="col-sm-12 no_side_padding item">
+        <div class="home_slider_item_seven">
+          <span class="inline_block">
+            <span class="block slider_big_text">
+              Divani Relax
+            </span>
+
+            <span class="block slider_medium_text">
+              Produzione Propria
+            </span>
+
+            <span class="block">
+              <%= link_to "Sfoglia",  divani_path(:anchor => "divani_relax"), class: "sfoglia_btn" %>
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="left carousel-control">
+      <a href="#carousel" role="button" data-slide="prev">
+      <i class="fa fa-angle-left"></i>
+        <span class="sr-only">Previous</span>
+      </a>
+    </div>
+    <div class="right carousel-control">
+      <a href="#carousel" role="button" data-slide="next">
+        <i class="fa fa-angle-right"></i>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
   </div>
 

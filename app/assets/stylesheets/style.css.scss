@@ -7,6 +7,23 @@ body {
   font-family: 'Changa', sans-serif;
 }
 
+.grey_bg {
+  background: #f3f3f3;
+}
+
+.top_block_border {
+  border-top: 1px solid #e6e6e6;
+  -webkit-box-shadow: inset 0px 30px 16px -30px #e6e6e6;
+  -moz-box-shadow: inset 0px 30px 16px -30px #e6e6e6;
+  box-shadow: inset 0px 30px 16px -30px #e6e6e6;
+}
+
+.gold_dash {
+  width: 250px;
+  height: 10px;
+  background: #bca480;
+}
+
 .logo_img {
   max-height: 150px;
 }
@@ -23,7 +40,7 @@ body {
   padding: 0;
   display: flex;
   justify-content: center;
-  padding: 30px 0 50px 0;
+  padding: 30px 0 0 0;
 }
 
 .nav_list li {
@@ -85,7 +102,7 @@ body {
   color: #bca480;
 }
 
-.home_slider_item {
+.home_slider_item_first {
   margin: 0px auto;
   background-color: transparent;
   padding: 0px;
@@ -93,7 +110,97 @@ body {
   background-repeat: no-repeat;
   background-size: auto 400px;
   background-position: center right 10%;
-  height: 450px;
+  height: 500px;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  padding-left: 8%;
+}
+
+.home_slider_item_second {
+  margin: 0px auto;
+  background-color: transparent;
+  padding: 0px;
+  background-image: asset-data-url('divani/divano-alexander.png');
+  background-repeat: no-repeat;
+  background-size: auto 400px;
+  background-position: center right 10%;
+  height: 500px;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  padding-left: 8%;
+}
+
+.home_slider_item_third {
+  margin: 0px auto;
+  background-color: transparent;
+  padding: 0px;
+  background-image: asset-data-url('divani/divano-letto-brianza.png');
+  background-repeat: no-repeat;
+  background-size: auto 400px;
+  background-position: center right 10%;
+  height: 500px;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  padding-left: 8%;
+}
+
+.home_slider_item_fourth {
+  margin: 0px auto;
+  background-color: transparent;
+  padding: 0px;
+  background-image: asset-data-url('divani/divano-multicolor-artigiano-del-divano.png');
+  background-repeat: no-repeat;
+  background-size: auto 350px;
+  background-position: center right 10%;
+  height: 500px;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  padding-left: 8%;
+}
+
+.home_slider_item_fifth {
+  margin: 0px auto;
+  background-color: transparent;
+  padding: 0px;
+  background-image: asset-data-url('divani/serena-angolare.png');
+  background-repeat: no-repeat;
+  background-size: auto 400px;
+  background-position: center right 10%;
+  height: 500px;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  padding-left: 8%;
+}
+
+.home_slider_item_six {
+  margin: 0px auto;
+  background-color: transparent;
+  padding: 0px;
+  background-image: asset-data-url('divani/murano-penisola.png');
+  background-repeat: no-repeat;
+  background-size: auto 400px;
+  background-position: center right 10%;
+  height: 500px;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  padding-left: 8%;
+}
+
+.home_slider_item_seven {
+  margin: 0px auto;
+  background-color: transparent;
+  padding: 0px;
+  background-image: asset-data-url('divani/serena-angolare.png');
+  background-repeat: no-repeat;
+  background-size: auto 400px;
+  background-position: center right 10%;
+  height: 500px;
   overflow: visible;
   display: flex;
   align-items: center;
@@ -128,9 +235,8 @@ body {
   color: #fff;
 }
 
-.home_materassi_image {
-  max-width: 400px;
-  min-height: 160px;
+.home_materassi_img_container {
+  background: #e8e8e8;
 }
 
 .subheading_text {
@@ -175,6 +281,18 @@ body {
   font-size: 16px;
 }
 
+.footer_email_link {
+  color: #000;
+  text-decoration: underline;
+  transition: all 0.1s ease;
+
+  &:hover, &:focus {
+    font-weight: 600;
+    color: #000;
+    outline: none;
+  }
+}
+
 .products_list_container {
   padding: 25px 0;
 }
@@ -216,4 +334,184 @@ body {
       border-color: #bca480;
     }
   }
+}
+
+.product_thumbnail {
+  max-height: 65px;
+}
+
+.product_show_heading {
+  font-family: 'Changa', sans-serif;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 600;
+  text-align: center;
+  color: #bca480;
+}
+
+.product_description {
+  padding-top: 15px;
+  line-height: 22px;
+}
+
+.divani_sizes_heading {
+  font-family: 'Changa', sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.divani_sizes_container {
+  margin-top: 20px;
+}
+
+.divani_sizes_text_container {
+  margin-top: 30px;
+  padding: 10px 20px 5px 20px;
+  background: #f5f5f5;
+  border: 1px solid #e6e6e6;
+}
+
+.divani_size_list {
+  margin: 0;
+  padding: 5px 0 0 25px;
+}
+
+.divani_size_list li {
+  padding: 3px;
+}
+
+.products_slider_container {
+  padding: 25px 0 25px 15px;
+}
+
+//products carousel
+
+.products_slider_carousel {
+  .carousel-control {
+    width: 8%;
+    width: 0px;
+  }
+  .carousel-control.left a .glyphicon,
+  .carousel-control.right a .glyphicon {
+    color: #000;
+  }
+  .carousel-control > a > span {
+    color: white;
+    font-size: 29px !important;
+  }
+  .carousel-control.right {
+    right: -30px;
+  }
+  .carousel-control.left {
+    left: -40px;
+  }
+  .carousel-col {
+    position: relative;
+    min-height: 1px;
+    padding: 5px 15px;
+    float: left;
+   }
+
+   .active > div { display:none; }
+   .active > div:first-child { display:block; }
+
+  /*xs*/
+  @media (max-width: 767px) {
+    .carousel-inner .active.left { left: -50%; }
+    .carousel-inner .active.right { left: 50%; }
+    .carousel-inner .next        { left:  50%; }
+    .carousel-inner .prev		     { left: -50%; }
+    .carousel-col                { width: 50%; }
+    .active > div:first-child + div { display:block; }
+  }
+
+  /*sm*/
+  @media (min-width: 768px) and (max-width: 991px) {
+    .carousel-inner .active.left { left: -50%; }
+    .carousel-inner .active.right { left: 50%; }
+    .carousel-inner .next        { left:  50%; }
+    .carousel-inner .prev		     { left: -50%; }
+    .carousel-col                { width: 50%; }
+    .active > div:first-child + div { display:block; }
+  }
+
+  /*md*/
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .carousel-inner .active.left { left: -33%; }
+    .carousel-inner .active.right { left: 33%; }
+    .carousel-inner .next        { left:  33%; }
+    .carousel-inner .prev		     { left: -33%; }
+    .carousel-col                { width: 33%; }
+    .active > div:first-child + div { display:block; }
+    .active > div:first-child + div + div { display:block; }
+  }
+
+  /*lg*/
+  @media (min-width: 1200px) {
+    .carousel-inner .active.left { left: -33%; }
+    .carousel-inner .active.right{ left:  33%; }
+    .carousel-inner .next        { left:  33%; }
+    .carousel-inner .prev		     { left: -33%; }
+    .carousel-col                { width: 33%; }
+    .active > div:first-child + div { display:block; }
+    .active > div:first-child + div + div { display:block; }
+  }
+
+  @media not all, (-webkit-transform-3d) {
+    .carousel-inner>.item  {
+      transition: none;
+    }
+  }
+}
+
+.home_carousel {
+  .carousel-control.left, .carousel-control.right {
+    display: flex !important;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: calc(50% - 20px);
+    font-size: 50px;
+    line-height: 50px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    z-index: 100;
+    background: none;
+    text-shadow: none;
+  }
+
+  .carousel-control.left a, .carousel-control.right a {
+    color: #000;
+  }
+
+  .carousel-indicators .active {
+    background-color: #333;
+    width: 15px;
+    height: 15px;
+  }
+
+  .carousel-indicators li {
+    border: 1px solid #676767;
+    width: 13px;
+    height: 13px;
+    margin: 0 3px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .carousel-indicators {
+      bottom: -25px;
+    }
+  }
+}
+
+.chi_siamo_top_image_container {
+  margin-top: -170px;
+}
+
+.chi_siamo_bottom_image_container {
+  top: 70px;
+  margin-bottom: -200px;
 }

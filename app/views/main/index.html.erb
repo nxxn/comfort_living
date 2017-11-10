@@ -1,9 +1,10 @@
 <%= render 'slider' %>
 
-<section>
+<section class="home_products_container top_block_border padding_bottom_50px">
   <div class="container no_side_padding">
+
     <div class="col-sm-12 no_side_padding home_products_list_container">
-      <div class="col-sm-3">
+      <div class="col-sm-6">
         <span class="block middle_heading">
           Divani
         </span>
@@ -17,7 +18,7 @@
         </span>
       </div>
 
-      <div class="col-sm-3">
+      <div class="col-sm-6">
         <span class="block middle_heading">
           Letti
         </span>
@@ -31,7 +32,10 @@
         </span>
       </div>
 
-      <div class="col-sm-3">
+    </div>
+
+    <div class="col-sm-12 no_side_padding text-center padding_bottom_70px">
+      <div class="col-sm-4">
         <span class="block middle_heading">
           Poltrone
         </span>
@@ -45,7 +49,31 @@
         </span>
       </div>
 
-      <div class="col-sm-3">
+      <div class="col-sm-4">
+        <span class="inline_block">
+          <span class="block middle_heading">
+            Materassi
+          </span>
+
+          <!-- <span class="block subheading_text text-center">
+            Mecflex, azienda leader nel settore del riposo, si occupa dal 1961 della produzione di materassi (molle, memory, lattice) e reti ortopediche.
+          </span>
+
+          <span class="block subheading_text padding_top_10px text-center">
+            Comfortable living è distributore esclusivo di materassi mecflex per le province di como, lecco, sondrio e varese.
+          </span> -->
+
+          <span class="block text-center home_materassi_img_container">
+            <%= image_tag("materassi/01-platinum-983x397.png", class: "img-responsive center_image") %>
+          </span>
+
+          <span class="block text-center">
+            <%= link_to "Guarda tutti i modelli", "", class: "products_more_link" %>
+          </span>
+        </span>
+      </div>
+
+      <div class="col-sm-4">
         <span class="block middle_heading">
           Divani Letto
         </span>
@@ -58,30 +86,17 @@
           <%= link_to "Guarda tutti i modelli", "", class: "products_more_link" %>
         </span>
       </div>
-    </div>
 
-    <div class="col-sm-12 no_side_padding text-center">
-      <span class="inline_block">
-        <span class="block middle_heading">
-          Materassi
-        </span>
-
-        <span class="block subheading_text text-center">
-          Mecflex, azienda leader nel settore del riposo, si occupa dal 1961 della produzione di materassi (molle, memory, lattice) e reti ortopediche.
-        </span>
-
-        <span class="block subheading_text padding_top_10px text-center">
-          Comfortable living è distributore esclusivo di materassi mecflex per le province di como, lecco, sondrio e varese.
-        </span>
-
-        <span class="block text-center padding_top_20px">
-          <%= image_tag("materassi/01-platinum-983x397.png", class: "img-responsive home_materassi_image center_image") %>
-        </span>
-
-        <span class="block text-center">
-          <%= link_to "Guarda tutti i modelli", "", class: "products_more_link" %>
-        </span>
-      </span>
     </div>
   </div>
 </section>
+
+<section>
+  <div class="container">
+    <div class="col-sm-12 text-center padding_bottom_20px section_heading">
+      Chi Siamo
+    </div>
+  </div>
+</section>
+
+<%= render 'chi_siamo' %>

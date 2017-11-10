@@ -1,7 +1,9 @@
 <section>
   <div class="col-sm-12 text-center">
     <span class="block padding_top_30px">
-      <%= image_tag("logo_cl.png", class: "img-responsive center_image logo_img") %>
+      <%= link_to root_url do %>
+        <%= image_tag("logo_cl.png", class: "img-responsive center_image logo_img") %>
+      <% end %>
     </span>
 
     <span class="block top_nav_heading">
@@ -19,27 +21,27 @@
         </li>
 
         <li>
-          <%= link_to "Chi Siamo", "#", class: "nav_item #{params[:controller] == 'main' && params[:action] == 'chi_siamo' ? 'active' : ''}" %>
+          <%= link_to "Divani", divani_path, class: "nav_item #{params[:controller] == 'divani' ? 'active' : ''}" %>
         </li>
 
         <li>
-          <%= link_to "Divani", divani_path, class: "nav_item #{params[:controller] == 'divani' && params[:action] == 'index' ? 'active' : ''}" %>
+          <%= link_to "Letti", "#", class: "nav_item #{params[:controller] == 'letti' ? 'active' : ''}" %>
         </li>
 
         <li>
-          <%= link_to "Letti", "#", class: "nav_item #{params[:controller] == 'letti' && params[:action] == 'index' ? 'active' : ''}" %>
+          <%= link_to "Poltrone", "#", class: "nav_item #{params[:controller] == 'poltrone' ? 'active' : ''}" %>
         </li>
 
         <li>
-          <%= link_to "Poltrone", "#", class: "nav_item #{params[:controller] == 'poltrone' && params[:action] == 'index' ? 'active' : ''}" %>
+          <%= link_to "Materassi", "#", class: "nav_item #{params[:controller] == 'materassi' ? 'active' : ''}" %>
         </li>
 
         <li>
-          <%= link_to "Materassi", "#", class: "nav_item #{params[:controller] == 'materassi' && params[:action] == 'index' ? 'active' : ''}" %>
+          <%= link_to "Chi Siamo", chi_siamo_path, class: "nav_item #{params[:controller] == 'main' && params[:action] == 'chi_siamo' ? 'active' : ''}" %>
         </li>
 
         <li>
-          <%= link_to "Dove Siamo", "#", class: "nav_item #{params[:controller] == 'main' && params[:action] == 'dove_siamo' ? 'active' : ''}" %>
+          <%= link_to "Dove Siamo", "#dove_siamo", class: "nav_item #{params[:controller] == 'main' && params[:action] == 'dove_siamo' ? 'active' : ''}" %>
         </li>
       </ul>
     </div>
