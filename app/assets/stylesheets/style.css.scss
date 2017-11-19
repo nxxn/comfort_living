@@ -84,6 +84,12 @@ body {
 
 .home_products_image {
   min-height: 147px;
+  border: 5px solid transparent;
+  transition: all 0.6s ease;
+
+  &:hover, &:focus {
+    border-color: #bca480;
+  }
 }
 
 .products_more_link {
@@ -94,12 +100,12 @@ body {
   margin-top: 20px;
   display: inline-block;
   transition: all 0.2s ease;
-}
 
-.products_more_link:hover, .products_more_link:focus {
-  border-color: #bca480;
-  text-decoration: none;
-  color: #bca480;
+  &:hover, &:focus {
+    border-color: #bca480;
+    text-decoration: none;
+    color: #bca480;
+  }
 }
 
 .home_slider_item_first {
@@ -354,6 +360,12 @@ body {
   line-height: 22px;
 }
 
+.letti_description {
+  @media (min-width: 1024px) {
+    max-width: 500px;
+  }
+}
+
 .divani_sizes_heading {
   font-family: 'Changa', sans-serif;
   font-size: 26px;
@@ -516,6 +528,8 @@ body {
   }
 }
 
+// products carousel end
+
 .chi_siamo_top_image_container {
   margin-top: -170px;
 }
@@ -523,6 +537,11 @@ body {
 .chi_siamo_bottom_image_container {
   top: 70px;
   margin-bottom: -200px;
+}
+
+.product_image_gallery_link {
+  margin-top: 10px;
+  display: inline-block;
 }
 
 .product_image_gallery_link, .fancybox-button {

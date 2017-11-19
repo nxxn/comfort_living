@@ -1,0 +1,118 @@
+<!-- Products slider block -->
+
+<section class="margin_top_50px">
+  <div class="container">
+    <div class="col-sm-12 text-center padding_top_20px">
+      <span class="inline_block gold_dash"></span>
+    </div>
+
+    <div class="col-sm-12 divani_sizes_heading">
+      Prodotti corelati
+    </div>
+
+    <div class="col-sm-12 products_slider_container">
+      <div id="carousel" class="carousel slide products_slider_carousel" data-ride="carousel" data-type="multi" data-interval="false">
+        <div class="carousel-inner">
+          <div class="text-center item active">
+            <div class="carousel-col">
+              <%= link_to singolo_chamonix_path, class: "product_link" do %>
+                <span class="block">
+                  <%= image_tag("letti/moderno/S_CHAMONIX/SB427_01.jpg", class: "img-responsive home_products_image") %>
+                </span>
+
+                <span class="inline_block product_heading">
+                  SINGOLO CHAMONIX
+                </span>
+              <% end %>
+            </div>
+          </div>
+
+          <div class="text-center item">
+            <div class="carousel-col">
+              <%= link_to piazza_e_mezza_sardegna_path, class: "product_link" do %>
+                <span class="block">
+                  <%= image_tag("letti/moderno/M_SARDEGNA/SD447_01.jpg", class: "img-responsive home_products_image") %>
+                </span>
+
+                <span class="inline_block product_heading">
+                  PIAZZA E MEZZA SARDEGNA
+                </span>
+              <% end %>
+            </div>
+          </div>
+
+          <div class="text-center item">
+            <div class="carousel-col">
+              <%= link_to piazza_e_mezza_stromboli_path, class: "product_link" do %>
+                <span class="block">
+                  <%= image_tag("letti/moderno/M_STROMBOLI/SD439_01.jpg", class: "img-responsive home_products_image") %>
+                </span>
+
+                <span class="inline_block product_heading">
+                  PIAZZA E MEZZA STROMBOLI
+                </span>
+              <% end %>
+            </div>
+          </div>
+
+          <div class="text-center item">
+            <div class="carousel-col">
+              <%= link_to king_size_giglio_path, class: "product_link" do %>
+                <span class="block">
+                  <%= image_tag("letti/moderno/KS_GIGLIO/KB443_01.jpg", class: "img-responsive home_products_image") %>
+                </span>
+
+                <span class="inline_block product_heading">
+                  KING SIZE GIGLIO
+                </span>
+              <% end %>
+            </div>
+          </div>
+
+          <div class="text-center item">
+            <div class="carousel-col">
+              <%= link_to piazza_e_mezza_sommier_path, class: "product_link" do %>
+                <span class="block">
+                  <%= image_tag("letti/moderno/M_SOMMIER/SD451_01.jpg", class: "img-responsive home_products_image") %>
+                </span>
+
+                <span class="inline_block product_heading">
+                  PIAZZA E MEZZA SOMMIER
+                </span>
+              <% end %>
+            </div>
+          </div>
+
+          <div class="text-center item">
+            <div class="carousel-col">
+              <%= link_to singolo_chamonix_path, class: "product_link" do %>
+                <span class="block">
+                  <%= image_tag("letti/moderno/S_CHAMONIX/SB427_01.jpg", class: "img-responsive home_products_image") %>
+                </span>
+
+                <span class="inline_block product_heading">
+                  SINGOLO CHAMONIX
+                </span>
+              <% end %>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+				<div class="left carousel-control">
+					<a href="#carousel" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+				</div>
+				<div class="right carousel-control">
+					<a href="#carousel" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+
+			</div>
+    </div>
+  </div>
+</section>

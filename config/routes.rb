@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   get 'divani', to: 'divani#index'
   get 'letti', to: 'letti#index'
+  get 'letti/moderno', to: 'letti#moderno', as: 'letto_moderno'
+  get 'letti/classico', to: 'letti#classico', as: 'letto_classico'
   get 'poltrone', to: 'poltrone#index'
   get 'materassi', to: 'divani#index'
 
@@ -36,4 +38,133 @@ Rails.application.routes.draw do
   get 'divani/letto/twin', to: 'divani#letto_twin', as: 'letto_twin'
   get 'divani/letto/comodo', to: 'divani#letto_comodo', as: 'letto_comodo'
   get 'divani/letto/venezia', to: 'divani#letto_venezia', as: 'letto_venezia'
+
+  #Letti Moderno
+  get 'letti/moderno/matrimoniale-stromboli', to: 'letti#matrimoniale_stromboli', as: 'matrimoniale_stromboli'
+
+  get 'letti/moderno/matrimoniale-roma', to: 'letti#matrimoniale_roma', as: 'matrimoniale_roma'
+
+  get 'letti/moderno/matrimoniale-chamonix', to: 'letti#matrimoniale_chamonix', as: 'matrimoniale_chamonix'
+
+  get 'letti/moderno/matrimoniale-elba', to: 'letti#matrimoniale_elba', as: 'matrimoniale_elba'
+
+  get 'letti/moderno/asolo', to: 'letti#asolo', as: 'asolo'
+
+  get 'letti/moderno/matrimoniale-sardegna', to: 'letti#matrimoniale_sardegna', as: 'matrimoniale_sardegna'
+
+  get 'letti/moderno/ponza', to: 'letti#ponza', as: 'ponza'
+
+  get 'letti/moderno/matrimoniale-giglio', to: 'letti#matrimoniale_giglio', as: 'matrimoniale_giglio'
+
+  get 'letti/moderno/matrimoniale-maddalena', to: 'letti#matrimoniale_maddalena', as: 'matrimoniale_maddalena'
+
+  get 'letti/moderno/sicilia', to: 'letti#sicilia', as: 'sicilia'
+
+  get 'letti/moderno/panarea', to: 'letti#panarea', as: 'panarea'
+
+  get 'letti/moderno/capri', to: 'letti#capri', as: 'capri'
+
+  get 'letti/moderno/matrimoniale-sommier', to: 'letti#matrimoniale_sommier', as: 'matrimoniale_sommier'
+
+  get 'letti/moderno/king-size-stromboli', to: 'letti#king_size_stromboli', as: 'king_size_stromboli'
+
+  get 'letti/moderno/king-size-roma', to: 'letti#king_size_roma', as: 'king_size_roma'
+
+  get 'letti/moderno/king-size-elba', to: 'letti#king_size_elba', as: 'king_size_elba'
+
+  get 'letti/moderno/king-size-sardegna', to: 'letti#king_size_sardegna', as: 'king_size_sardegna'
+
+  get 'letti/moderno/king-size-giglio', to: 'letti#king_size_giglio', as: 'king_size_giglio'
+
+  get 'letti/moderno/piazza-e-mezza_chamonix', to: 'letti#piazza_e_mezza_chamonix', as: 'piazza_e_mezza_chamonix'
+
+  get 'letti/moderno/piazza-e-mezza-stromboli', to: 'letti#piazza_e_mezza_stromboli', as: 'piazza_e_mezza_stromboli'
+
+  get 'letti/moderno/piazza-e-mezza-maddalena', to: 'letti#piazza_e_mezza_maddalena', as: 'piazza_e_mezza_maddalena'
+
+  get 'letti/moderno/piazza-e-mezza-sardegna', to: 'letti#piazza_e_mezza_sardegna', as: 'piazza_e_mezza_sardegna'
+
+  get 'letti/moderno/piazza-e-mezza-sommier', to: 'letti#piazza_e_mezza_sommier', as: 'piazza_e_mezza_sommier'
+
+  get 'letti/moderno/singolo-chamonix', to: 'letti#singolo_chamonix', as: 'singolo_chamonix'
+
+  get 'letti/moderno/singolo-stromboli', to: 'letti#singolo_stromboli', as: 'singolo_stromboli'
+
+  get 'letti/moderno/singolo-maddalena', to: 'letti#singolo_maddalena', as: 'singolo_maddalena'
+
+  get 'letti/moderno/singolo-sommier', to: 'letti#singolo_sommier', as: 'singolo_sommier'
+
+  get 'letti/moderno/singolo-sardegna', to: 'letti#singolo_sardegna', as: 'singolo_sardegna'
+
+  #Letti Classico
+  get 'letti/classico/matrimoniale_tiffany', to: 'letti#matrimoniale_tiffany', as: 'matrimoniale_tiffany'
+  
+  get 'letti/classico/matrimoniale-anna', to: 'letti#matrimoniale_anna', as: 'matrimoniale_anna'
+
+  get 'letti/classico/matrimoniale-anna', to: 'letti#matrimoniale_anna', as: 'matrimoniale_anna'
+
+  get 'letti/classico/matrimoniale-lucy', to: 'letti#matrimoniale_lucy', as: 'matrimoniale_lucy'
+
+  get 'letti/classico/matrimoniale-penelope', to: 'letti#matrimoniale_penelope', as: 'matrimoniale_penelope'
+
+  get 'letti/classico/matrimoniale-grace', to: 'letti#matrimoniale_grace', as: 'matrimoniale_grace'
+
+  get 'letti/classico/matrimoniale-gardenia', to: 'letti#matrimoniale_gardenia', as: 'matrimoniale_gardenia'
+
+  get 'letti/classico/matrimoniale-victoria', to: 'letti#matrimoniale_victoria', as: 'matrimoniale_victoria'
+
+  get 'letti/classico/matrimoniale_alicia', to: 'letti#matrimoniale_alicia', as: 'matrimoniale_alicia'
+
+  get 'letti/classico/matrimoniale_katherine', to: 'letti#matrimoniale_katherine', as: 'matrimoniale_katherine'
+
+  get 'letti/classico/matrimoniale_greta', to: 'letti#matrimoniale_greta', as: 'matrimoniale_gretagreta'
+
+  get 'letti/classico/matrimoniale_elizabeth', to: 'letti#matrimoniale_elizabeth', as: 'matrimoniale_elizabeth'
+
+  get 'letti/classico/matrimoniale_anita', to: 'letti#matrimoniale_anita', as: 'matrimoniale_anita'
+
+  get 'letti/classico/matrimoniale_ingrid', to: 'letti#matrimoniale_ingrid', as: 'matrimoniale_ingrid'
+
+  get 'letti/classico/matrimoniale_veronica', to: 'letti#matrimoniale_veronica', as: 'matrimoniale_veronica'
+
+  get 'letti/classico/cameron', to: 'letti#cameron', as: 'cameron'
+
+  get 'letti/classico/hilary', to: 'letti#hilary', as: 'hilary'
+
+  get 'letti/classico/sabrina', to: 'letti#sabrina', as: 'sabrina'
+
+  get 'letti/classico/amy', to: 'letti#amy', as: 'amy'
+
+  get 'letti/classico/cora', to: 'letti#cora', as: 'cora'
+
+  get 'letti/classico/jennifer', to: 'letti#jennifer', as: 'jennifer'
+
+  get 'letti/classico/norah', to: 'letti#norah', as: 'norah'
+
+  get 'letti/classico/piazza-e-mezza-grace', to: 'letti#piazza_e_mezza_grace', as: 'piazza_e_mezza_grace'
+
+  get 'letti/classico/piazza-e-mezza-victoria', to: 'letti#piazza_e_mezza_victoria', as: 'piazza_e_mezza_victoria'
+
+  get 'letti/classico/piazza-e-mezza-lucy/', to: 'letti#piazza_e_mezza_lucy/', as: 'piazza_e_mezza_lucy/'
+
+  get 'letti/classico/piazza-e-mezza-katherine/', to: 'letti#piazza_e_mezza_katherine/', as: 'piazza_e_mezza_katherine/'
+
+  get 'letti/classico/piazza-e-mezza-veronica/', to: 'letti#piazza_e_mezza_veronica/', as: 'piazza_e_mezza_veronica/'
+
+  get 'letti/classico/piazza-e-mezza-alicia/', to: 'letti#piazza_e_mezza_alicia/', as: 'piazza_e_mezza_alicia/'
+
+  get 'letti/classico/singolo-katherine/', to: 'letti#singolo_katherine/', as: 'singolo_katherine/'
+
+  get 'letti/classico/singolo-grace/', to: 'letti#singolo_grace/', as: 'singolo_grace/'
+
+  get 'letti/classico/singolo-lucy/', to: 'letti#singolo_lucy/', as: 'singolo_lucy/'
+
+  get 'letti/classico/singolo-victoria/', to: 'letti#singolo_victoria/', as: 'singolo_victoria/'
+
+  get 'letti/classico/singolo-ingrid/', to: 'letti#singolo_ingrid/', as: 'singolo_ingrid/'
+
+  get 'letti/classico/singolo-veronica/', to: 'letti#singolo_veronica/', as: 'singolo_veronica/'
+
+  get 'letti/classico/singolo-greta/', to: 'letti#singolo_greta/', as: 'singolo_greta/'
+
 end
