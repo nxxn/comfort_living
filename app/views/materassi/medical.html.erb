@@ -1,0 +1,77 @@
+<section class="padding_top_70px padding_bottom_70px grey_bg">
+  <div class="container">
+    <div class="col-sm-12 no_side_padding flex">
+      <div class="col-sm-5">
+        <span class="block">
+          <a class="product_image_gallery_link zero_margin" href="<%= asset_path('materassi/Presidio/Medical/materassi-mecflex-melissano-118-1000x428.png') %>" data-fancybox="gallery" title="">
+            <%= image_tag("materassi/Presidio/Medical/materassi-mecflex-melissano-118-1000x428.png", class: "img-responsive") %>
+          </a>
+        </span>
+      </div>
+
+      <div class="col-sm-7">
+        <span class="block product_show_heading text-center">
+          Mec Medical
+        </span>
+
+        <div class="col-sm-12 no_side_padding padding_top_30px text-center">
+
+          <div class="col-sm-4">
+            <span class="block">
+              <%= image_tag("materassi/icons/mecflex-ico1-76x76.png", class: "materassi_icon_description") %>
+            </span>
+
+            <span class="block padding_top_20px">
+              LATO ESTIVO
+              <br>
+              <span class="gold_text">COTONE</span>
+            </span>
+
+            <span class="block padding_top_20px">
+              LATO INVERNALE
+              <br>
+              <span class="gold_text">LANA</span>
+            </span>
+          </div>
+
+          <div class="col-sm-4">
+            <span class="block">
+              <%= image_tag("materassi/icons/mecflex-ico2-84x83.png", class: "materassi_icon_description") %>
+            </span>
+
+            <span class="block padding_top_20px">
+              DIMENSIONI
+              <br>
+              <span class="gold_text">H25</span>
+            </span>
+          </div>
+
+          <div class="col-sm-4">
+            <span class="block">
+              <%= image_tag("materassi/icons/mecflex-ico3-56x89.png", class: "materassi_icon_description") %>
+            </span>
+
+            <span class="block padding_top_20px">
+              STRUTTURA INTERNA 2 STRATI
+              <br>
+              <span class="gold_text">MEMORY HD cm 5</span>
+              <br>
+              <span class="gold_text">MECFOAM cm 15</span>
+            </span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="padding_top_70px">
+  <div class="container">
+    <%= render '6_maniglie' %>
+
+    <%= render 'memorymec_mecfoam_presidio' %>
+
+    <%= render 'trevira_bioactive' %>
+  </div>
+</section>

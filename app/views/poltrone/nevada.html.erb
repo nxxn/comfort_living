@@ -1,0 +1,36 @@
+<section class="padding_top_70px padding_bottom_70px grey_bg">
+  <div class="container">
+    <div class="col-sm-12 no_side_padding">
+      <div class="col-sm-5">
+        <span class="block">
+          <a class="product_image_gallery_link zero_margin" href="<%= asset_path('poltrone/NEVADA/PT101_01.jpg') %>" data-fancybox="gallery" title="">
+            <%= image_tag("poltrone/NEVADA/PT101_01.jpg", class: "img-responsive") %>
+          </a>
+        </span>
+
+        <span class="block">
+          <span class="inline_block">
+            <a class="product_image_gallery_link" href="<%= asset_path('poltrone/NEVADA/PT101_02.jpg') %>" data-fancybox="gallery" title="">
+              <%= image_tag("poltrone/NEVADA/PT101_02.jpg", class: "product_thumbnail") %>
+            </a>
+          </span>
+
+        </span>
+      </div>
+
+      <div class="col-sm-7">
+        <span class="inline_block product_show_heading">
+          NEVADA
+        </span>
+
+        <span class="inline_block product_description letti_description">
+          Poltrona imbottita rivestita in soft-touch con struttura in acciaio satinato.
+        </span>
+
+        <span class="block padding_top_10px">
+          <%= link_to "Scheda Tecnica", "PT101.pdf", target: "_blank", class: "products_more_link" %>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>

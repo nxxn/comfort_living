@@ -2,7 +2,7 @@
   <div class="col-sm-12 text-center">
     <span class="block padding_top_30px">
       <%= link_to root_url do %>
-        <%= image_tag("logo_cl.png", class: "img-responsive center_image logo_img") %>
+        <%= image_tag("logo_new.png", class: "img-responsive center_image logo_img") %>
       <% end %>
     </span>
 
@@ -29,11 +29,11 @@
         </li>
 
         <li>
-          <%= link_to "Poltrone", "#", class: "nav_item #{params[:controller] == 'poltrone' ? 'active' : ''}" %>
+          <%= link_to "Poltrone", poltrone_path, class: "nav_item #{params[:controller] == 'poltrone' ? 'active' : ''}" %>
         </li>
 
         <li>
-          <%= link_to "Materassi", "#", class: "nav_item #{params[:controller] == 'materassi' ? 'active' : ''}" %>
+          <%= link_to "Materassi", materassi_path, class: "nav_item #{params[:controller] == 'materassi' ? 'active' : ''}" %>
         </li>
 
         <li>

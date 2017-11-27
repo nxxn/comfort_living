@@ -10,7 +10,9 @@
         </span>
 
         <span class="block">
-          <%= image_tag("divani/01-12.jpg", class: "img-responsive home_products_image") %>
+          <%= link_to divani_path do %>
+            <%= image_tag("divani/01-12.jpg", class: "img-responsive home_products_image") %>
+          <% end %>
         </span>
 
         <span class="block text-center">
@@ -24,7 +26,9 @@
         </span>
 
         <span class="block">
-          <%= image_tag("letti/KB441_01.jpg", class: "img-responsive home_products_image") %>
+          <%= link_to letti_path do %>
+            <%= image_tag("letti/KB441_01.jpg", class: "img-responsive home_products_image") %>
+          <% end %>
         </span>
 
         <span class="block text-center">
@@ -41,11 +45,13 @@
         </span>
 
         <span class="block">
-          <%= image_tag("poltrone/PT504_01.jpg", class: "img-responsive home_products_image") %>
+          <%= link_to poltrone_path do %>
+            <%= image_tag("poltrone/PT504_01.jpg", class: "img-responsive home_products_image") %>
+          <% end %>
         </span>
 
         <span class="block text-center">
-          <%= link_to "Guarda tutti i modelli", "", class: "products_more_link" %>
+          <%= link_to "Guarda tutti i modelli", poltrone_path, class: "products_more_link" %>
         </span>
       </div>
 
@@ -64,11 +70,13 @@
           </span> -->
 
           <span class="block text-center home_materassi_img_container">
-            <%= image_tag("materassi/01-platinum-983x397.png", class: "img-responsive center_image") %>
+            <%= link_to materassi_path do %>
+              <%= image_tag("materassi/01-platinum-983x397.png", class: "img-responsive center_image home_products_image") %>
+            <% end %>
           </span>
 
           <span class="block text-center">
-            <%= link_to "Guarda tutti i modelli", "", class: "products_more_link" %>
+            <%= link_to "Guarda tutti i modelli", materassi_path, class: "products_more_link" %>
           </span>
         </span>
       </div>
@@ -79,11 +87,13 @@
         </span>
 
         <span class="block">
-          <%= image_tag("divani/02-7.jpg", class: "img-responsive home_products_image") %>
+          <%= link_to divani_path(anchor: "divani_letto") do %>
+            <%= image_tag("divani/02-7.jpg", class: "img-responsive home_products_image") %>
+          <% end %>
         </span>
 
         <span class="block text-center">
-          <%= link_to "Guarda tutti i modelli", "", class: "products_more_link" %>
+          <%= link_to "Guarda tutti i modelli", divani_path(anchor: "divani_letto"), class: "products_more_link" %>
         </span>
       </div>
 

@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get 'letti/moderno', to: 'letti#moderno', as: 'letto_moderno'
   get 'letti/classico', to: 'letti#classico', as: 'letto_classico'
   get 'poltrone', to: 'poltrone#index'
-  get 'materassi', to: 'divani#index'
+  get 'materassi', to: 'materassi#index'
 
   get 'chi_siamo', to: 'main#chi_siamo'
   get 'dove_siamo', to: 'main#dove_siamo'
@@ -98,8 +98,6 @@ Rails.application.routes.draw do
 
   #Letti Classico
   get 'letti/classico/matrimoniale_tiffany', to: 'letti#matrimoniale_tiffany', as: 'matrimoniale_tiffany'
-  
-  get 'letti/classico/matrimoniale-anna', to: 'letti#matrimoniale_anna', as: 'matrimoniale_anna'
 
   get 'letti/classico/matrimoniale-anna', to: 'letti#matrimoniale_anna', as: 'matrimoniale_anna'
 
@@ -109,7 +107,7 @@ Rails.application.routes.draw do
 
   get 'letti/classico/matrimoniale-grace', to: 'letti#matrimoniale_grace', as: 'matrimoniale_grace'
 
-  get 'letti/classico/matrimoniale-gardenia', to: 'letti#matrimoniale_gardenia', as: 'matrimoniale_gardenia'
+  get 'letti/classico/gardenia', to: 'letti#gardenia', as: 'gardenia'
 
   get 'letti/classico/matrimoniale-victoria', to: 'letti#matrimoniale_victoria', as: 'matrimoniale_victoria'
 
@@ -117,7 +115,7 @@ Rails.application.routes.draw do
 
   get 'letti/classico/matrimoniale_katherine', to: 'letti#matrimoniale_katherine', as: 'matrimoniale_katherine'
 
-  get 'letti/classico/matrimoniale_greta', to: 'letti#matrimoniale_greta', as: 'matrimoniale_gretagreta'
+  get 'letti/classico/matrimoniale_greta', to: 'letti#matrimoniale_greta', as: 'matrimoniale_greta'
 
   get 'letti/classico/matrimoniale_elizabeth', to: 'letti#matrimoniale_elizabeth', as: 'matrimoniale_elizabeth'
 
@@ -145,26 +143,89 @@ Rails.application.routes.draw do
 
   get 'letti/classico/piazza-e-mezza-victoria', to: 'letti#piazza_e_mezza_victoria', as: 'piazza_e_mezza_victoria'
 
-  get 'letti/classico/piazza-e-mezza-lucy/', to: 'letti#piazza_e_mezza_lucy/', as: 'piazza_e_mezza_lucy/'
+  get 'letti/classico/piazza-e-mezza-lucy', to: 'letti#piazza_e_mezza_lucy', as: 'piazza_e_mezza_lucy'
 
-  get 'letti/classico/piazza-e-mezza-katherine/', to: 'letti#piazza_e_mezza_katherine/', as: 'piazza_e_mezza_katherine/'
+  get 'letti/classico/piazza-e-mezza-katherine', to: 'letti#piazza_e_mezza_katherine', as: 'piazza_e_mezza_katherine'
 
-  get 'letti/classico/piazza-e-mezza-veronica/', to: 'letti#piazza_e_mezza_veronica/', as: 'piazza_e_mezza_veronica/'
+  get 'letti/classico/piazza-e-mezza-veronica', to: 'letti#piazza_e_mezza_veronica', as: 'piazza_e_mezza_veronica'
 
-  get 'letti/classico/piazza-e-mezza-alicia/', to: 'letti#piazza_e_mezza_alicia/', as: 'piazza_e_mezza_alicia/'
+  get 'letti/classico/piazza-e-mezza-alicia', to: 'letti#piazza_e_mezza_alicia', as: 'piazza_e_mezza_alicia'
 
-  get 'letti/classico/singolo-katherine/', to: 'letti#singolo_katherine/', as: 'singolo_katherine/'
+  get 'letti/classico/singolo-katherine', to: 'letti#singolo_katherine', as: 'singolo_katherine'
 
-  get 'letti/classico/singolo-grace/', to: 'letti#singolo_grace/', as: 'singolo_grace/'
+  get 'letti/classico/singolo-grace', to: 'letti#singolo_grace', as: 'singolo_grace'
 
-  get 'letti/classico/singolo-lucy/', to: 'letti#singolo_lucy/', as: 'singolo_lucy/'
+  get 'letti/classico/singolo-lucy', to: 'letti#singolo_lucy', as: 'singolo_lucy'
 
-  get 'letti/classico/singolo-victoria/', to: 'letti#singolo_victoria/', as: 'singolo_victoria/'
+  get 'letti/classico/singolo-victoria/', to: 'letti#singolo_victoria', as: 'singolo_victoria'
 
-  get 'letti/classico/singolo-ingrid/', to: 'letti#singolo_ingrid/', as: 'singolo_ingrid/'
+  get 'letti/classico/singolo-ingrid', to: 'letti#singolo_ingrid', as: 'singolo_ingrid'
 
-  get 'letti/classico/singolo-veronica/', to: 'letti#singolo_veronica/', as: 'singolo_veronica/'
+  get 'letti/classico/singolo-veronica', to: 'letti#singolo_veronica', as: 'singolo_veronica'
 
-  get 'letti/classico/singolo-greta/', to: 'letti#singolo_greta/', as: 'singolo_greta/'
+  get 'letti/classico/singolo-greta', to: 'letti#singolo_greta', as: 'singolo_greta'
+
+  #Portlone
+
+  get 'poltrone/maiorca', to: 'poltrone#maiorca', as: 'maiorca'
+  get 'poltrone/santiago', to: 'poltrone#santiago', as: 'santiago'
+  get 'poltrone/salisburgo', to: 'poltrone#salisburgo', as: 'salisburgo'
+  get 'poltrone/baltimora', to: 'poltrone#baltimora', as: 'baltimora'
+  get 'poltrone/merida', to: 'poltrone#merida', as: 'merida'
+  get 'poltrone/florida', to: 'poltrone#florida', as: 'florida'
+  get 'poltrone/nevada', to: 'poltrone#nevada', as: 'nevada'
+  get 'poltrone/citymap', to: 'poltrone#citymap', as: 'citymap'
+  get 'poltrone/marsiglia', to: 'poltrone#marsiglia', as: 'marsiglia'
+
+  #Materassi economic
+  get 'materassi/economic/excellent', to: 'materassi#excellent', as: 'excellent'
+  get 'materassi/economic/platinum', to: 'materassi#platinum', as: 'platinum'
+  get 'materassi/economic/lucent', to: 'materassi#lucent', as: 'lucent'
+  get 'materassi/economic/prince', to: 'materassi#prince', as: 'prince'
+  get 'materassi/economic/sublime-natura', to: 'materassi#sublime_natura', as: 'sublime_natura'
+  get 'materassi/economic/sublime-gold', to: 'materassi#sublime_gold', as: 'sublime_gold'
+  get 'materassi/economic/sublime-silver', to: 'materassi#sublime_silver', as: 'sublime_silver'
+  get 'materassi/economic/sublime-lusso', to: 'materassi#sublime_lusso', as: 'sublime_lusso'
+  get 'materassi/economic/sublime-elegance', to: 'materassi#sublime_elegance', as: 'sublime_elegance'
+
+  #Materassi spring
+  get 'materassi/spring/de-luxe', to: 'materassi#de_luxe', as: 'de_luxe'
+  get 'materassi/spring/grandeur', to: 'materassi#grandeur', as: 'grandeur'
+  get 'materassi/spring/galaxy', to: 'materassi#galaxy', as: 'galaxy'
+  get 'materassi/spring/extra', to: 'materassi#extra', as: 'extra'
+  get 'materassi/spring/export', to: 'materassi#export', as: 'export'
+
+  #Materassi memory
+  get 'materassi/memory/luxor', to: 'materassi#luxor', as: 'luxor'
+  get 'materassi/memory/ergo-memory', to: 'materassi#ergo_memory', as: 'ergo_memory'
+  get 'materassi/memory/zefiro', to: 'materassi#zefiro', as: 'zefiro'
+  get 'materassi/memory/oceano', to: 'materassi#oceano', as: 'oceano'
+  get 'materassi/memory/lis', to: 'materassi#lis', as: 'lis'
+  get 'materassi/memory/gris', to: 'materassi#gris', as: 'gris'
+  get 'materassi/memory/olim', to: 'materassi#olim', as: 'olim'
+  get 'materassi/memory/es', to: 'materassi#es', as: 'es'
+
+  #Materassi foam
+  get 'materassi/foam/moros', to: 'materassi#moros', as: 'moros'
+  get 'materassi/foam/salus', to: 'materassi#salus', as: 'salus'
+  get 'materassi/foam/acar', to: 'materassi#acar', as: 'acar'
+  get 'materassi/foam/ares', to: 'materassi#ares', as: 'ares'
+
+  #Materassi foam
+  get 'materassi/latex/ecoform', to: 'materassi#ecoform', as: 'ecoform'
+  get 'materassi/latex/ecosin', to: 'materassi#ecosin', as: 'ecosin'
+  get 'materassi/latex/ecobase', to: 'materassi#ecobase', as: 'ecobase'
+  get 'materassi/latex/ecogreen', to: 'materassi#ecogreen', as: 'ecogreen'
+  get 'materassi/latex/ecogen', to: 'materassi#ecogen', as: 'ecogen'
+
+  #Materassi fireproof
+  get 'materassi/fireproof/sublime', to: 'materassi#sublime', as: 'sublime'
+  get 'materassi/fireproof/resort', to: 'materassi#resort', as: 'resort'
+  get 'materassi/fireproof/hc', to: 'materassi#hc', as: 'hc'
+  get 'materassi/fireproof/h_2000', to: 'materassi#h_2000', as: 'h_2000'
+
+  #Materassi presidio
+  get 'materassi/presidio/medical', to: 'materassi#medical', as: 'medical'
+  get 'materassi/presidio/sanity', to: 'materassi#sanity', as: 'sanity'
 
 end

@@ -1,0 +1,59 @@
+<section class="padding_top_70px padding_bottom_70px grey_bg">
+  <div class="container">
+    <div class="col-sm-12 no_side_padding flex">
+      <div class="col-sm-5">
+        <span class="block">
+          <a class="product_image_gallery_link zero_margin" href="<%= asset_path('materassi/Fireproof/HC/materassi-mecflex-melissano-176-1000x407.png') %>" data-fancybox="gallery" title="">
+            <%= image_tag("materassi/Fireproof/HC/materassi-mecflex-melissano-176-1000x407.png", class: "img-responsive") %>
+          </a>
+        </span>
+      </div>
+
+      <div class="col-sm-7">
+        <span class="block product_show_heading text-center">
+          HC
+        </span>
+
+        <div class="col-sm-12 no_side_padding padding_top_30px text-center">
+
+          <div class="col-sm-4">
+            <span class="block">
+              <%= image_tag("materassi/icons/mecflex-ico2-84x83.png", class: "materassi_icon_description") %>
+            </span>
+
+            <span class="block padding_top_20px">
+              DIMENSIONI
+              <br>
+              <span class="gold_text">H23</span>
+            </span>
+          </div>
+
+          <div class="col-sm-4">
+            <span class="block">
+              <%= image_tag("materassi/icons/mecflex-ico3-56x89.png", class: "materassi_icon_description") %>
+            </span>
+
+            <span class="block padding_top_20px">
+              SISTEMA DI MOLLEGGIO
+              <br>
+              <span class="gold_text">700 MOLLE BONNEL</span>
+            </span>
+
+            <span class="block padding_top_20px">
+              <span class="gold_text">FIBRE IGNIFUGHE</span>
+            </span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="padding_top_70px">
+  <div class="container">
+    <%= render '6_maniglie' %>
+    <%= render 'molle_bonnel' %>
+    <%= render 'trevira_cs_ignitex' %>
+  </div>
+</section>
