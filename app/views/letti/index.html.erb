@@ -1,22 +1,11 @@
 <section class="grey_bg padding_top_50px">
   <div class="container no_side_padding">
 
-    <div id="divani_design" class="col-sm-12 padding_top_20px no_side_padding">
-      <div class="col-sm-6">
-        <span class="inline_block products_big_text">
+    <div id="divani_design" class="col-sm-12 no_side_padding products_list_container padding_bottom_80px">
+      <div class="col-sm-6 text-center">
+        <span class="block products_big_text">
           Letti Moderno
         </span>
-      </div>
-
-      <div class="col-sm-6">
-        <span class="inline_block products_big_text">
-          Letti Classico
-        </span>
-      </div>
-    </div>
-
-    <div class="col-sm-12 no_side_padding products_list_container padding_bottom_80px">
-      <div class="col-sm-6 text-center">
         <%= link_to letto_moderno_path, class: "product_link" do %>
           <span class="block">
             <%= image_tag("letti/moderno/STROMBOLI/BD439_01_cropped.jpg", class: "img-responsive home_products_image") %>
@@ -24,7 +13,10 @@
         <% end %>
       </div>
 
-      <div class="col-sm-6 text-center">
+      <div class="col-sm-6 text-center mobile_padding_top_20px">
+        <span class="block products_big_text">
+          Letti Classico
+        </span>
         <%= link_to letto_classico_path, class: "product_link" do %>
           <span class="block">
             <%= image_tag("letti/classico/TIFFANY/BD409_01_cropped.jpg", class: "img-responsive home_products_image") %>
