@@ -165,6 +165,12 @@ Rails.application.routes.draw do
 
   get 'letti/classico/singolo-greta', to: 'letti#singolo_greta', as: 'singolo_greta'
 
+  #New Letti
+
+  get 'letti/bolero', to: 'letti#bolero', as: 'bolero'
+  get 'letti/tokio', to: 'letti#tokio', as: 'tokio'
+  get 'letti/dorian', to: 'letti#dorian', as: 'dorian'
+
   #Portlone
 
   get 'poltrone/maiorca', to: 'poltrone#maiorca', as: 'maiorca'

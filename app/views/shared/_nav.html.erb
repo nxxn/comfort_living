@@ -1,13 +1,13 @@
 <section>
   <div class="col-sm-12 text-center">
     <span class="block padding_top_30px">
-      <%= link_to root_url do %>
-        <%= image_tag("logo_new.png", class: "img-responsive center_image logo_img") %>
+      <%= link_to root_url, class: "top_logo_link" do %>
+        <%= image_tag("logo_add_4.png", class: "img-responsive center_image logo_img") %>
       <% end %>
     </span>
 
     <span class="block top_nav_heading">
-      La tua comodità, la nostra passione
+      Produzione Artigianale Su Misura
     </span>
   </div>
 </section>
@@ -28,9 +28,11 @@
           <%= link_to "Letti", letti_path, class: "nav_item #{params[:controller] == 'letti' ? 'active' : ''}" %>
         </li>
 
-        <li>
-          <%= link_to "Poltrone", poltrone_path, class: "nav_item #{params[:controller] == 'poltrone' ? 'active' : ''}" %>
-        </li>
+        <% if false %>
+          <li>
+            <%= link_to "Poltrone", poltrone_path, class: "nav_item #{params[:controller] == 'poltrone' ? 'active' : ''}" %>
+          </li>
+        <% end %>
 
         <li>
           <%= link_to "Materassi", materassi_path, class: "nav_item #{params[:controller] == 'materassi' ? 'active' : ''}" %>

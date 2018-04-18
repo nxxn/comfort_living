@@ -1,0 +1,185 @@
+<section class="padding_top_70px padding_bottom_70px grey_bg">
+  <div class="container">
+    <div class="col-sm-12 no_side_padding">
+      <div class="col-sm-5">
+        <span class="block">
+          <a class="product_image_gallery_link zero_margin" href="<%= asset_path('letti/tokio/01.jpg') %>" data-fancybox="gallery" title="">
+            <%= image_tag("letti/tokio/01.jpg", class: "img-responsive") %>
+          </a>
+        </span>
+        <span class="block padding_top_15px">
+          <span class="inline_block">
+            <a class="product_image_gallery_link" href="<%= asset_path('letti/tokio/02.jpg') %>" data-fancybox="gallery" title="">
+              <%= image_tag("letti/tokio/02.jpg", class: "product_thumbnail") %>
+            </a>
+          </span>
+
+          <span class="inline_block">
+            <a class="product_image_gallery_link" href="<%= asset_path('letti/tokio/03.jpg') %>" data-fancybox="gallery" title="">
+              <%= image_tag("letti/tokio/03.jpg", class: "product_thumbnail") %>
+            </a>
+          </span>
+
+          <span class="inline_block">
+            <a class="product_image_gallery_link" href="<%= asset_path('letti/tokio/04.jpg') %>" data-fancybox="gallery" title="">
+              <%= image_tag("letti/tokio/04.jpg", class: "product_thumbnail") %>
+            </a>
+          </span>
+
+          <span class="inline_block">
+            <a class="product_image_gallery_link" href="<%= asset_path('letti/tokio/05.jpg') %>" data-fancybox="gallery" title="">
+              <%= image_tag("letti/tokio/05.jpg", class: "product_thumbnail") %>
+            </a>
+          </span>
+
+          <span class="inline_block">
+            <a class="product_image_gallery_link" href="<%= asset_path('letti/tokio/06.jpg') %>" data-fancybox="gallery" title="">
+              <%= image_tag("letti/tokio/06.jpg", class: "product_thumbnail") %>
+            </a>
+          </span>
+        </span>
+      </div>
+
+      <div class="col-sm-7">
+        <span class="inline_block product_show_heading">
+          Tokio
+        </span>
+
+        <span class="inline_block product_description">
+          Il modello Tokio è un elegante letto di linee moderne. La testata liscia e semicurva abbraccia il bordo giroletto che ne esalta la linea. Il rivestimento in pelle o ecopelle è impreziosito da doppie cuciture in contrasto o tono su tono a seconda della preferenza.
+          <br><br>
+          I robusti contenitori dei letti BIESSE sono realizzati con struttura in ferro rivestita da pannelli di legno color ciliegio.
+          <br>
+          Il perimetro della rete poggia interamente sulla struttura portante dal contenitore.
+          <br>
+          I contenitori hanno ben 5 piedini d' appoggio.
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sizes block -->
+
+<section class="top_block_border">
+  <div class="container">
+    <div class="col-sm-12 no_side_padding divani_sizes_container">
+      <div class="col-sm-4">
+        <span class="block text-center divani_sizes_img_container">
+          <%= image_tag("letti_sizes/matrimoniale.gif", class: "divani_sizes_img") %>
+        </span>
+
+        <span class="block divani_sizes_text_container">
+          <span class="block uppercase">
+            Matrimoniale
+          </span>
+
+          <span class="block">
+            <ul class="divani_size_list">
+              <li>
+                L 180 cm
+              </li>
+
+              <li>
+                P 215 cm
+              </li>
+            </ul>
+          </span>
+        </span>
+      </div>
+
+      <div class="col-sm-4">
+        <span class="block text-center divani_sizes_img_container">
+          <%= image_tag("letti_sizes/una_piazza_mezza.gif", class: "divani_sizes_img") %>
+        </span>
+
+        <span class="block divani_sizes_text_container">
+          <span class="block uppercase">
+            Una piazza e 1/2
+          </span>
+
+          <span class="block">
+            <ul class="divani_size_list">
+              <li>
+                L 140 cm
+              </li>
+
+              <li>
+                P 215 cm
+              </li>
+            </ul>
+          </span>
+        </span>
+      </div>
+
+      <div class="col-sm-4">
+        <span class="block text-center divani_sizes_img_container">
+          <%= image_tag("letti_sizes/una_piazza.gif", class: "divani_sizes_img") %>
+        </span>
+
+        <span class="block divani_sizes_text_container">
+          <span class="block uppercase">
+            Una piazza
+          </span>
+
+          <span class="block">
+            <ul class="divani_size_list">
+              <li>
+                L 100 cm
+              </li>
+
+              <li>
+                P 215 cm
+              </li>
+            </ul>
+          </span>
+        </span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Products slider block -->
+
+<section class="margin_top_50px">
+  <div class="container">
+    <div class="col-sm-12 text-center padding_top_20px">
+      <span class="inline_block gold_dash"></span>
+    </div>
+
+    <div class="col-sm-12 divani_sizes_heading">
+      Prodotti corelati
+    </div>
+
+    <div class="col-sm-12 products_slider_container">
+      <div class="col-sm-6 text-center item active">
+        <div class="carousel-col">
+          <%= link_to bolero_path, class: "product_link" do %>
+            <span class="block">
+              <%= image_tag("letti/bolero/01.jpg", class: "img-responsive home_products_image") %>
+            </span>
+
+            <span class="inline_block product_heading">
+              Bolero
+            </span>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="col-sm-6 text-center item">
+        <div class="carousel-col">
+          <%= link_to dorian_path, class: "product_link" do %>
+            <span class="block">
+              <%= image_tag("letti/dorian/01.jpg", class: "img-responsive home_products_image") %>
+            </span>
+
+            <span class="inline_block product_heading">
+              Dorian
+            </span>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
