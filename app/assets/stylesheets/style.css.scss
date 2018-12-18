@@ -290,6 +290,12 @@ body {
   font-family: 'Changa', sans-serif;
 }
 
+.contacts_list {
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+}
+
 .contacts_list li {
   list-style: none;
 }
